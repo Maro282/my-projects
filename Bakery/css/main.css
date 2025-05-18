@@ -1,0 +1,495 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+/*-------------Starting of header style -----------*/
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./../images/drew-coffman-1872.jpg);
+  background-size: cover;
+  font-family: "Alegreya";
+  background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(53, 51, 48, 0.5);
+  z-index: 999;
+}
+
+.header .title-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .title-image {
+  width: 15%;
+  float: left;
+  margin: 20px 0px 0px 70px;
+}
+
+.header .nav-bar {
+  float: right;
+  text-align: center;
+  margin: 45px 40px 0 0;
+  font-size: 20px;
+}
+
+.header .nav-bar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.header .nav-bar a:hover {
+  color: #4b4245;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.header .header-content {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.header .header-content p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.header .header-content h1 {
+  font-size: 76px;
+  margin-bottom: 20px;
+}
+
+.btns {
+  margin-top: auto;
+}
+
+.btns .left-btn {
+  text-align: center;
+  padding: 20px;
+  background-color: #8e7754;
+  border-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.btns .left-btn:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.btns .right-btn {
+  text-align: center;
+  padding: 20px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btns .right-btn:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+/*---------------End of header style -----------*/
+
+/*--------------Starting of who we are section------*/
+
+.who-we-are-container {
+  margin-top: 100px;
+  width: 100%;
+  font-family: "Alegreya";
+}
+
+.who-we-are-section {
+  width: 90%;
+  margin: auto;
+}
+
+.who-we-are-section-image {
+  width: 45%;
+  float: left;
+}
+.who-we-are-section-image img {
+  width: 100%;
+  display: block; /*to eleminate Extra space below image*/
+}
+
+.who-we-are-section-content {
+  width: 50%;
+  float: right;
+  margin-top: 50px;
+}
+
+.who-we-are-section-content h2 {
+  margin-bottom: 30px;
+  color: #303030;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.who-we-are-section-content p {
+  line-height: 1.8;
+  color: #686868;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.content-list-section .icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 1px double #686868;
+  border-radius: 50%;
+}
+.content-list-section div img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.content-list-section p {
+  display: inline-block;
+  height: 30px;
+  vertical-align: 10px;
+  margin-left: 15px;
+}
+
+/*--------------Ending of who we are section------*/
+
+/* ------------------Starting of location section ----------*/
+
+.our-location-container {
+  margin-top: 100px;
+  background-color: #f8f8f8;
+  width: 100%;
+  font-family: "Alegreya";
+}
+
+.our-location-section {
+  width: 90%;
+  margin: auto;
+  background-color: #f8f8f8;
+}
+
+.our-location-content {
+  width: 49%;
+  float: left;
+  margin-top: 150px;
+}
+
+.our-location-content h2 {
+  margin-bottom: 30px;
+  color: #303030;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.our-location-content .our-location-first-p {
+  line-height: 1.8;
+  color: #686868;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.our-location-content .our-location-second-p {
+  line-height: 1.8;
+  color: #686868;
+  font-size: 17px;
+}
+
+.our-location-image {
+  margin: 80px 0px;
+  width: 48%;
+  float: right;
+}
+
+.our-location-image img {
+  width: 100%;
+  display: block;
+}
+
+/* ------------------Ending of location section ----------*/
+
+/* ------------------Starting of baking section ----------*/
+
+.our-baking-container {
+  margin: 100px 0;
+  width: 100%;
+  font-family: "Alegreya";
+  text-align: center;
+}
+
+.our-baking-top {
+  text-align: center;
+  color: #686868;
+  margin-bottom: 60px;
+}
+
+.our-baking-top h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #303030;
+  margin-bottom: 25px;
+}
+
+.our-baking-top p {
+  color: #686868;
+  font-size: 17px;
+}
+
+.our-baking-content {
+  width: 90%;
+  margin: auto;
+}
+
+.our-baking-content .card {
+  width: 350px;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 0 20px;
+}
+
+.our-baking-content .card img {
+  width: 100%;
+}
+
+.our-baking-content .card h2 {
+  font-weight: 400;
+  color: #303030;
+  margin: 20px 0;
+}
+
+.our-baking-content .card p {
+  color: #686868;
+  line-height: 1.8;
+}
+
+/*   ------- Starting of contact section ---- */
+
+.our-contact-container {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #f8f8f8;
+  font-family: "Alegreya";
+}
+
+.our-contact-section {
+  width: 90%;
+  background-color: #f8f8f8;
+  margin: auto;
+}
+
+.our-contact-section .our-contact-content {
+  width: 49%;
+  display: inline-block;
+}
+
+.our-contact-content h2 {
+  margin: 80px 0 40px;
+  color: #303030;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.our-contact-content .our-contact-first-p {
+  line-height: 1.8;
+  color: #686868;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.our-contact-content .our-contact-second-p {
+  line-height: 1.8;
+  color: #686868;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.our-contact-map {
+  margin: 80px 0px;
+  width: 48%;
+  display: inline-block;
+  border: 1px solid #8e7754;
+}
+
+.map {
+  width: 100%;
+}
+
+.contact-list-section {
+  margin-bottom: 20px;
+  color: #686868;
+}
+
+.contact-list-section .icon {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-color: #8e7754;
+  border-radius: 50%;
+}
+.contact-list-section div img {
+  width: 100%;
+  /*vertical-align: bottom;*/
+}
+
+.contact-list-section p {
+  display: inline-block;
+  height: 30px;
+  vertical-align: 10px;
+  margin-left: 15px;
+}
+
+/*   ------- Ending of contact section ---- */
+
+.footer-container {
+  background-color: #403d38;
+}
+
+.footer-container .footer-lists {
+  width: 90%;
+  background-color: #403d38;
+  margin: auto;
+}
+.footer-container .footer-lists .content {
+  width: 25%;
+  float: left;
+  background-color: #403d38;
+  margin: 50px 0px;
+  color: #969696;
+  text-align: left;
+}
+
+.footer-container .footer-lists h3 {
+  color: white;
+  margin-bottom: 30px;
+}
+.footer-container .footer-lists .about p {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.footer-container .footer-lists .special ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+}
+
+li {
+  margin-bottom: 6px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: list-item;
+  line-height: 32px;
+}
+
+li::before {
+  content: ">";
+  padding-right: 7px;
+}
+
+li a {
+  text-decoration: none;
+  color: #969696;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-details-map {
+  background-image: url(./../images/contact-details-map.png);
+  background-size: cover;
+}
+
+.ul-contact-details li::before {
+  content: "";
+}
+.ul-contact-details div {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0;
+}
+.ul-contact-details div img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/*-----------------------*/
+
+.footer {
+  background-color: #353330;
+  text-align: center;
+}
+
+.footer-image {
+  margin: auto;
+  width: 353px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer p {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #969696;
+  font-size: 15px;
+}
+
+.social-media {
+  padding-bottom: 30px;
+}
+
+.footer .social-media div {
+  display: inline-block;
+  width: 50px;
+}
+
+.footer .social-media div img {
+  width: 100%;
+}
+
+.design {
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+  background-color: #47443f;
+  border-radius: 50%;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+.gmail:hover {
+  background-color: #dd4b39;
+}
+
+.linkedin:hover {
+  background-color: cornflowerblue;
+}
+
+.twiter:hover {
+  background-color: #00aced;
+}
