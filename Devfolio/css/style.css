@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --nav-list-link-color: #4e4e4e;
+  --nav-list-link-color-hover: rgb(0, 120, 255);
+  --basic-container-background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+body {
+  height: 2000px;
+  /* background-color: red;*/
+  background-color: var(--basic-container-background-color);
+}
+
+a {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: none;
+}
+
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:focus {
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  color: white;
+  background-color: transparent;
+}
+
+.nav-pills .nav-link.active::before {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 1px;
+  left: 5px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.navbar-collapse ul.navbar-nav li a {
+  position: relative;
+  overflow: hidden;
+}
+
+/* --------------------------END NAVBAR ----------------------------- */
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("./../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: rgb(255, 255, 255);
+}
+
+/* ---------------------------PROFILE-------------------------- */
+
+.profile {
+  background-color: #fff;
+}
+
+.left p {
+  color: rgb(30, 30, 30);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.left span {
+  color: rgb(78, 78, 78);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.left .skill {
+  color: rgb(78, 78, 78);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.left .skill h4 {
+  color: rgb(30, 30, 30);
+}
+
+.right h2 {
+  position: relative;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+}
+
+.right h2::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #0078ff;
+  bottom: -2px;
+}
+
+.right p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgb(78, 78, 78);
+}
+
+/* ---------------------------END PROFILE --------------------- */
+
+/* --------------------------------SERVICES------------------------ */
+
+.services {
+  background-color: #f5f5f5;
+}
+
+.title h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.title-p {
+  position: relative;
+  color: rgb(78, 78, 78);
+}
+
+.title-p::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.item {
+  background-color: white;
+}
+
+.item h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.item p {
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(78, 78, 78);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  font-size: 40px;
+  border: 10px solid #0078ff;
+  transition: all 0.5s ease;
+}
+
+.item:hover .icon {
+  border-color: #0078ff;
+  color: white;
+  background-color: #0078ff;
+  border: 10px solid #cde1f8;
+}
+
+/* --------------------------------------------------------------------- */
+/* ------------------------------------ Statistics---------------------------- */
+
+.statistics {
+  background-image: linear-gradient(rgba(15, 99, 195, 0.6)),
+    url("./../images/counters-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.counter-box .icon {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  border: 10px solid rgb(205, 225, 248);
+  background-color: transparent;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.counter-box .number {
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+}
+
+.counter-box .topic {
+  line-height: 24px;
+  color: white;
+}
+
+/* --------------------------------POrtfolio------------------------- */
+
+.portfolio {
+  background-color: var(--basic-container-background-color);
+}
+
+.project-img {
+  overflow: hidden;
+}
+
+.project-img img {
+  transition: all 0.5s;
+}
+.project-img:hover img {
+  transform: scale(1.2);
+}
+
+.box-left h2 {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
+  color: rgb(30, 30, 30);
+}
+
+.box-left p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.box-left span {
+  color: rgb(0, 120, 255);
+}
+
+.box-right {
+  width: 40px;
+  height: 40px;
+  border: solid #0078ff;
+  font-size: 20px;
+}
+
+.box-right i {
+  color: #0078ff;
+}
+/* ---------------------------------------------------------------- */
+
+/* ------------------------SLIDER---------------------------- */
+.slider-container {
+  background-image: linear-gradient(rgba(0, 120, 255, 0.5)),
+    url("./../images/overlay-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.content {
+  row-gap: 10px;
+  overflow: hidden;
+}
+
+.slid-1 {
+  row-gap: 10px;
+  transform: translateX(-106%);
+  transition: all 0.5s;
+}
+
+.slid-1 h2,
+.slid-2 h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.slid-1 p,
+.slid-2 p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.slid-2 {
+  row-gap: 10px;
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+
+.slider-button {
+  width: 15px;
+  height: 15px;
+  background-color: #7dafeb;
+}
+
+.slider-button:focus {
+  background-color: White;
+}
+/* ------------------------------------------------------------------- */
+
+/* -------------------------------Blog---------------------------- */
+.blog {
+  background-color: var(--basic-container-background-color);
+}
+
+.travel {
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: rgb(0, 120, 255);
+  padding: 2px 12px;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-tittle a {
+  font-size: 21px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 25px;
+  transition: all 0.7s ease;
+}
+
+.card-tittle a:hover {
+  color: rgb(0, 120, 255);
+}
+
+.card-footer a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.5s ease;
+  color: black;
+  font-size: 15px;
+}
+
+.card-footer a:hover {
+  color: rgb(0, 120, 255);
+}
+
+.card-footer a img {
+  width: 32px;
+  height: 32px;
+}
+
+.card-footer .time {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+}
+/* ----------------------------------------------------------------------- */
+
+/* ------------------------------Contact us ------------ */
+.slider-container {
+  background-image: linear-gradient(rgba(0, 120, 255, 0.5)),
+    url("./../images/overlay-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.contact-wrapper {
+  background-color: white;
+}
+
+.left {
+  row-gap: 30px;
+}
+
+.contact-wrapper h2 {
+  padding: 0;
+  color: black;
+  position: relative;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+.contact-wrapper h2:before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  background-color: rgb(0, 120, 255);
+  bottom: -7px;
+  left: 0;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 0;
+  row-gap: 20px;
+}
+
+.form input {
+  border: 0.1px solid #dee2e6;
+  outline: none;
+  font-size: 15px;
+}
+
+.form input:focus {
+  border-color: rgb(0, 120, 255);
+}
+
+.form > [data="style"] {
+  border: 0.1px solid #dee2e6;
+  outline: none;
+  font-size: 15px;
+}
+
+.form > [data="style"]:focus {
+  border-color: rgb(0, 120, 255);
+}
+
+.form button {
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(0, 120, 255);
+}
+
+.form button:hover {
+  background-color: rgb(51, 147, 255);
+}
+
+.right {
+  row-gap: 20px;
+  color: black;
+}
+
+.right .description {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgb(78, 78, 78);
+}
+
+.right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right ul li i {
+  color: rgb(0, 120, 255);
+}
+
+.right ul li span {
+  color: rgb(78, 78, 78);
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.social-media {
+  column-gap: 10px;
+}
+
+.social-media .icon {
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgba(0, 120, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.social-media .icon a {
+  color: rgb(0, 0, 0);
+}
+
+.social-media .icon a:hover {
+  color: white;
+}
+
+.social-media .icon a:hover .icon {
+  color: white;
+}
+
+.social-media .icon i {
+  font-size: 20px;
+}
+
+.social-media .icon:hover {
+  background-color: rgb(0, 120, 255);
+  color: white;
+  border: 5px solid rgb(51, 147, 255);
+  cursor: pointer;
+}
+
+.social-media .icon:hover a {
+  color: white;
+}
+/* ---------------------------------------- */
+/* --------------------FOOTER------------------ */
+
+.footer {
+  color: white;
+  background-color: rgb(0, 98, 211);
+}
