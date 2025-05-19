@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <mian>
+      <div class="vh-100">
+        <div class="container">
+          <div
+            class="d-flex flex-column align-items-center row-gap-3 py-3 px-5 bg-dange"
+          >
+            <div class="header">
+              <h1>Quote of the Day</h1>
+            </div>
+            <p class="note mb-0">
+              Press the button below to recieve a random quote!
+            </p>
+
+            <div>
+              <button
+                class="btn btn-outline-secondary py-3 px-5 fs-3 fw-normal text-dark"
+                onclick="random()"
+              >
+                New Quote!
+              </button>
+            </div>
+
+            <div class="quote">
+              <div
+                class="quote-inner d-flex flex-column align-items-center rounded-3 p-5"
+              >
+                <p>“A room without books is like a body without a soul.”</p>
+                <span class="author fw-bolder fs-5"
+                  >-- Marcus Tullius Cicero</span
+                >
+              </div>
+            </div>
+
+            <div class="quote">
+              <div
+                class="quote-inner d-flex flex-column align-items-center rounded-3 p-5"
+              >
+                <p>
+                  “Two things are infinite: the universe and human stupidity;
+                  and I'm not sure about the universe.”
+                </p>
+                <span class="author fw-bolder fs-5">-- Albert Einstein</span>
+              </div>
+            </div>
+
+            <div class="quote">
+              <div
+                class="quote-inner d-flex flex-column align-items-center rounded-3 p-5"
+              >
+                <p>
+                  “You only live once, but if you do it right, once is enough.”
+                </p>
+                <span class="author fw-bolder fs-5">-- Mae West</span>
+              </div>
+            </div>
+
+            <div class="quote">
+              <div
+                class="quote-inner d-flex flex-column align-items-center rounded-3 p-5"
+              >
+                <p>
+                  “To live is the rarest thing in the world. Most people exist,
+                  that is all.”
+                </p>
+                <span class="author fw-bolder fs-5">-- Oscar Wilde</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mian>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

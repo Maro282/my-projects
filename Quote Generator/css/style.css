@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  background-image: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.header h1 {
+  font-size: 100px;
+  font-weight: 500;
+  text-shadow: 40px 20px rgb(172, 180, 144, 0.5);
+}
+
+.note {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.btn {
+  letter-spacing: 5px;
+  padding-bottom: 8px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #a1b9e4;
+  border-color: black;
+}
+
+.quote {
+  display: none;
+  padding-bottom: 8px;
+}
+
+.quote .quote-inner {
+  background-color: rgb(172, 180, 144, 0.3);
+}
+
+.quote .quote-inner p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.author {
+  font-family: "Times New Roman", Times, serif;
+}
